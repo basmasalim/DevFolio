@@ -1,5 +1,5 @@
 # DevFolio
-DevFolio is a Responsive single Page Portfolio Website that is built using HTML, CSS & Bootstrap.
+DevFolio is a simple responsive user interface web page that is built using HTML, CSS & Bootstrap.
 
 ### Built with
 
