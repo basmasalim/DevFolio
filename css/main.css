@@ -1,0 +1,1085 @@
+:root {
+  --navbar-color: #040404;
+  --font-default: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 40px;
+}
+*,
+*::after,
+*::before {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: var(--font-default);
+  height: 100%;
+  width: 100%;
+}
+img {
+  display: block;
+  width: 100%;
+}
+a {
+  color: inherit;
+}
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.title-s {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.title-info {
+  font-size: 0.89rem;
+}
+img.w-ml-100.rounded-2.w-sm-25.mb-sm-5 {
+  margin-bottom: 20px;
+}
+/* <!-- d-sm-flex flex-sm-row --> */
+section {
+  background-color: #f5f5f5;
+}
+/*-------------------------------- Start Navbar ------------------------------------*/
+nav .dropdown-menu li {
+  position: relative;
+}
+nav .dropdown-menu .dropdown-submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: -7px;
+}
+nav .dropdown-menu .dropdown-submenu-left {
+  right: 100%;
+  left: auto;
+}
+nav .dropdown:hover > .dropdown-menu,
+nav .dropdown-menu > li:hover > .dropdown-submenu {
+  display: block;
+}
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
+  color: #0078ff;
+}
+
+nav .dropdown-menu {
+  font-family: var(--font-default);
+  font-size: 0.8rem;
+  border: none; /* Remove border */
+  border-radius: 0; /* Remove border-radius */
+  position: absolute;
+  top: 2.5rem;
+}
+nav .links li a {
+  position: relative;
+  padding-left: 28px;
+  font-family: var(--font-default);
+  font-weight: 500;
+  transition: all 1s;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+nav .links li a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2.5px;
+  left: 10%;
+  bottom: 2px;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+nav .links li a:hover::before {
+  width: 70%;
+}
+.navbar-nav .nav-link.active {
+  position: relative;
+}
+.navbar-nav .nav-link.active.active::after {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 2.5px;
+  left: 10%;
+  bottom: 2px;
+  background-color: #fff;
+  transition: all 0.6s;
+}
+/*-------------------------------- End Navbar ------------------------------------*/
+/*-------------------------------- Start Header ------------------------------------*/
+header {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../images/hero-bg.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+h1 {
+  font-size: 4.5rem;
+  font-family: var(--font-default);
+}
+section .about-me {
+  position: relative;
+}
+section .about-me::before {
+  content: " ";
+  position: absolute;
+  background-color: #0078ff;
+  bottom: -20%;
+  width: 100px;
+  height: 3px;
+}
+#typed {
+  font-size: 2.5rem;
+}
+.typed-cursor {
+  font-size: 2.5rem;
+}
+/*-------------------------------- End Header ------------------------------------*/
+/*-------------------------------- Start services ------------------------------------*/
+#blogs p,
+#work p,
+#services p {
+  position: relative;
+}
+
+#blogs .title-line::before,
+#work .title-line::before,
+#services .title-line::before {
+  content: " ";
+  position: absolute;
+  background-color: #0078ff;
+  bottom: -80%;
+  left: 48%;
+  width: 45px;
+  height: 4.5px;
+}
+#services .services-area {
+  margin-right: 15px;
+}
+#services .services-area:hover .icon {
+  background-color: #0078ff;
+  color: #fff;
+  border-color: #cde1f8;
+  transition: all 1s;
+}
+#services .services-icon .icon {
+  width: 120px;
+  height: 120px;
+  border: #0078ff 11px solid;
+}
+/*-------------------------------- End services ------------------------------------*/
+/*-------------------------------- Start count ------------------------------------*/
+#count {
+  background: linear-gradient(
+      to right,
+      rgba(0, 119, 255, 0.7),
+      rgba(0, 119, 255, 0.7)
+    ),
+    url(../images/counters-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  height: auto;
+  padding-block: 100px;
+}
+#count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#count .num {
+  margin-right: 80px;
+  font-size: 24px;
+  font-weight: 600;
+}
+#count span {
+  font-size: 0.89rem;
+}
+#count .counter .icon {
+  width: 75px;
+  height: 75px;
+  border: #cde1f8 8px solid;
+  margin-left: 100px;
+}
+/*-------------------------------- End count ------------------------------------*/
+/*-------------------------------- Start work ------------------------------------*/
+#work .card{
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.2);
+  border-radius: 0% !important;
+}
+#work .card-img, .card-img-top{
+  border-radius:0 !important ;
+}
+.card-img:hover .card-hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+.card-img .card-hover {
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+.card-img {
+  overflow: hidden;
+}
+.card-body .mycard .card-info {
+  font-size: 12px;
+}
+.card-body .mycard .card-link,
+.card-body .mycard .card-info p .card-title-s {
+  color: #0078ff;
+}
+.card-body .mycard .card-info p span {
+  color: rgba(0, 0, 0, 0.6);
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 50px 0;
+  height: 150px;
+}
+.modal-content {
+  margin-top: 80px;
+}
+/* Add Animation */
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 100px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+/*-------------------------------- End work ------------------------------------*/
+/*-------------------------------- Start PortfolioDetails ------------------------------------*/
+#blog,
+#PortfolioDetails {
+  padding-bottom: 70px;
+}
+#PortfolioDetails .title,
+#blog-details .title {
+  background: linear-gradient(
+      to right,
+      rgba(0, 119, 255, 0.7),
+      rgba(0, 119, 255, 0.7)
+    ),
+    url(../images/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff;
+  padding-top: 80px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 60px;
+  margin-bottom: 50px;
+}
+
+#blog-details .title h1,
+#PortfolioDetails .title h1 {
+  font-size: 3.5rem;
+}
+#blog-details .title p,
+#PortfolioDetails .title p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+#PortfolioDetails .owl-dots {
+  position: absolute;
+  left: 2%;
+  right: 0%;
+  bottom: -1.8rem;
+  text-align: center;
+}
+#PortfolioDetails .owl-carousel .item .item-layer {
+  position: relative;
+}
+#PortfolioDetails .owl-carousel button.owl-dot {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin: 0 3px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: #0078ff solid 1px;
+  opacity: 0.7;
+  transition: 300ms;
+}
+
+#PortfolioDetails .owl-carousel button.owl-dot.active {
+  background-color: #0078ff;
+}
+#PortfolioDetails .project ul {
+  line-height: 1.5rem;
+  padding-top: 10px;
+}
+#PortfolioDetails .project ul li {
+  display: flex;
+  align-items: center;
+}
+#PortfolioDetails .project ul li h6 {
+  margin-right: 10px; /* Adjust the margin as needed */
+  color: #4e4e4e;
+  font-weight: 500;
+}
+#PortfolioDetails .project ul li span {
+  padding-bottom: 9px;
+  opacity: 0.8;
+}
+#PortfolioDetails .example p {
+  padding-top: 9px;
+  opacity: 0.8;
+}
+/*-------------------------------- End PortfolioDetails ------------------------------------*/
+/*-------------------------------- Start testimonials ------------------------------------*/
+#testimonials {
+  background: linear-gradient(
+      to right,
+      rgba(0, 119, 255, 0.7),
+      rgba(0, 119, 255, 0.7)
+    ),
+    url(../images/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff;
+  height: 500px;
+}
+
+#testimonials .owl-carousel .item .item-layer {
+  height: 300px;
+  text-align: center;
+  margin-top: 80px;
+  padding-top: 40px;
+  position: relative;
+}
+
+#testimonials .owl-carousel .item .item-layer .content-test {
+  position: absolute;
+  bottom: -15px;
+  left: 50%; /* Adjusted left value for centering */
+  transform: translateX(-50%); /* Center the element */
+  width: 70%;
+}
+
+#testimonials .owl-carousel .item .item-image {
+  height: 130px;
+  width: 130px;
+  position: absolute;
+  left: 50%; /* Center the element */
+  transform: translateX(-50%); /* Center the element */
+}
+
+#testimonials .owl-carousel .item .item-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#testimonials .owl-carousel span {
+  margin-block: 50px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#testimonials .owl-carousel .description {
+  margin-block: 50px;
+}
+
+#testimonials .owl-dots {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  bottom: 5px;
+  text-align: center;
+}
+
+#testimonials .owl-carousel button.owl-dot {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin: 0 3px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.7;
+  transition: 300ms;
+}
+
+#testimonials .owl-carousel button.owl-dot.active {
+  opacity: 1;
+}
+/*-------------------------------- End testimonials ------------------------------------*/
+/*-------------------------------- Start blogs ------------------------------------*/
+#blogs .card{
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.2);
+}
+#blogs .mycard-title:hover {
+  color: #0078ff;
+  cursor: pointer;
+}
+#blogs .comment {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+}
+#blogs .card-body {
+  position: relative;
+}
+
+#blogs .card-category-box {
+  position: absolute;
+  text-align: center;
+  top: -16px;
+  left: 15px;
+  right: 15px;
+  line-height: 25px;
+  overflow: hidden;
+}
+#blogs .card-category {
+  display: inline-block;
+  color: #fff;
+  padding: 0 15px 5px;
+  overflow: hidden;
+  background-color: #0078ff;
+  border-radius: 4px;
+}
+
+#blogs .card-category .category {
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.1px;
+  margin-bottom: 0;
+}
+
+#blogs .card-footer {
+  position: relative;
+  display: flex;
+}
+#blogs .card-footer .footer-image {
+  width: 28px;
+  height: 28px;
+}
+#blogs .card-footer .footer-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#blogs .card-footer span a {
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 10px;
+}
+#blogs .card-footer span a:hover {
+  color: #0078ff;
+}
+#blogs .card-footer .clock {
+  position: absolute;
+  right: 10px;
+}
+/*-------------------------------- End blogs ------------------------------------*/
+/*-------------------------------- Start blog-details ------------------------------------*/
+#blog-details .post-box {
+  background-color: #fff;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+#blog-details .post-box .post-image img {
+  width: 100%;
+}
+#blog-details .post-box .post-title ul {
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+}
+#blog-details .post-box .post-title ul::after {
+  content: "";
+  position: absolute;
+  background-color: #0078ff;
+  width: 5px;
+  height: 25px;
+  left: 0px;
+}
+#blog-details .post-box .post-title ul li {
+  padding-inline: 20px;
+}
+#blog-details .post-box .post-title ul li a {
+  text-decoration: none;
+  color: #0078ff;
+}
+#blog-details .post-box .post-info p {
+  opacity: 0.8;
+}
+#blog-details .post-box .post-info h5 {
+  position: relative;
+  font-size: 19px;
+  font-style: italic;
+  padding-block: 20px;
+  padding-left: 20px;
+  color: #4e4e4e;
+  font-weight: 500;
+  opacity: 1;
+}
+#blog-details .post-box .post-info h5::after {
+  content: "";
+  position: absolute;
+  background-color: #0078ff;
+  width: 4px;
+  height: 60px;
+  left: 0px;
+  bottom: -5px;
+}
+#blog-details .comments {
+  background-color: #fff;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+#blog-details .reply h2,
+#blog-details .comments h2 {
+  position: relative;
+  margin-bottom: 50px;
+}
+#blog-details .reply h2::after,
+#blog-details .comments h2::after {
+  content: " ";
+  position: absolute;
+  background-color: #0078ff;
+  height: 3px;
+  width: 100px;
+  left: 0px;
+  bottom: -10px;
+}
+#blog-details .comments-body {
+  display: flex;
+  justify-content: space-between;
+}
+#blog-details .comments-body .image-comment {
+  padding-left: 50px;
+}
+
+#blog-details .comments .image {
+  width: 24%;
+}
+#blog-details .comments span {
+  font-style: italic;
+}
+#blog-details .comments p {
+  opacity: 0.9;
+}
+#blog-details .comments a {
+  text-decoration: none;
+  color: #0078ff;
+}
+#blog-details .reply {
+  background-color: #fff;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+#blog-details .reply button {
+  background-color: #0078ff;
+  color: #fff;
+  font-size: 19px;
+  padding: 15px 40px;
+  border-radius: 50px;
+  transition: all 1s;
+}
+#blog-details .reply button:hover {
+  background-color: #0062d3;
+  border: transparent 1px solid;
+}
+#blog-details .tags,
+#blog-details .archives,
+#blog-details .recent,
+#blog-details .search {
+  padding: 50px;
+}
+#blog-details h4 {
+  position: relative;
+  font-size: 28px;
+  font-weight: 500;
+  padding-left: 20px;
+  line-height: 55px;
+}
+#blog-details h4::before {
+  content: "";
+  position: absolute;
+  background-color: #0078ff;
+  width: 4px;
+  height: 30px;
+  left: 0%;
+  top: 25%;
+}
+#blog-details .search input {
+  width: 18rem;
+}
+#blog-details .search form div {
+  border-radius: 0%;
+  width: 50px;
+  background-color: #0078ff;
+}
+#blog-details .archives ul li,
+#blog-details .recent ul li {
+  position: relative;
+  line-height: 35px;
+}
+#blog-details .archives ul li::before,
+#blog-details .recent ul li::before {
+  content: "";
+  position: absolute;
+  background-color: #0078ff;
+  width: 11px;
+  height: 1px;
+  left: -10%;
+  top: 55%;
+}
+#blog-details .tags ul li a,
+#blog-details .archives ul li a,
+#blog-details .recent ul li a {
+  text-decoration: none;
+}
+#blog-details .archives ul li a:hover,
+#blog-details .recent ul li a:hover {
+  color: #0078ff;
+}
+#blog-details .tags ul {
+  padding-left: 0;
+  margin-right: -20px;
+}
+#blog-details .tags ul li {
+  margin: 8px 10px;
+}
+#blog-details .tags ul li a {
+  color: #fff;
+  background-color: #0078ff;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+/*-------------------------------- End blog-details ------------------------------------*/
+/*-------------------------------- Start CONTACT ------------------------------------*/
+#contact {
+  background: linear-gradient(
+      to right,
+      rgba(0, 119, 255, 0.7),
+      rgba(0, 119, 255, 0.7)
+    ),
+    url(../images/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff;
+  padding-block: 80px;
+}
+#contact .container .contact-container {
+  background-color: #fff;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-inline: 35px;
+}
+#contact .contact-title h5 {
+  position: relative;
+  color: rgb(30, 30, 30);
+  font-size: 30px;
+}
+#contact .contact-title h5::before {
+  content: "";
+  position: absolute;
+  background-color: #0078ff;
+  width: 100px;
+  height: 2.5px;
+  bottom: -10px;
+}
+#contact .form-control {
+  border-radius: 0%;
+}
+#contact .btn {
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin-inline: 80px;
+  margin-top: 20px;
+}
+#contact .touch p {
+  color: rgba(0, 0, 0);
+  font-weight: 200;
+  font-size: 19px;
+  line-height: 25px;
+  padding-right: 50px;
+}
+#contact .form-icon p {
+  color: rgba(0, 0, 0);
+  font-weight: 200;
+  font-size: 15px;
+  margin-left: 35px;
+  margin-top: -15px;
+}
+#contact .form-icon span {
+  color: #0078ff;
+  margin-bottom: 50px;
+}
+#contact .icon {
+  width: 2rem;
+  height: 2rem;
+  border: 3px #0078ff solid;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#contact .icon:hover {
+  background-color: #0078ff;
+  border-color: #fff;
+}
+#contact .icon i {
+  color: #000;
+}
+#contact .icon i:hover {
+  color: #fff;
+}
+#contact input::placeholder,
+#contact textarea::placeholder {
+  font-size: 13px;
+}
+/*-------------------------------- End CONTACT ------------------------------------*/
+/*-------------------------------- Start Footer ------------------------------------*/
+footer {
+  background-color: #0062d3;
+  color: #fff;
+  text-align: center;
+  padding-block: 30px 10px;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
+}
+footer p {
+  line-height: 10px;
+}
+/*-------------------------------- End Footer ------------------------------------*/
+/*-------------------------------- Start Scroll To Top ------------------------------------*/
+.top{
+  position: fixed;
+  bottom: 10px;
+  right: -100px;
+  background-color: #0078ff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0px 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.top.show{
+  right: 10px;
+}
+/*-------------------------------  End Scroll To Top ------------------------------- */
+/*-------------------------------  Start Media-Queries ------------------------------- */
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {
+  #count .counter .icon {
+    margin-left: 80px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+  .title-s {
+    font-size: 0.98rem;
+    font-weight: 600;
+    display: flex;
+  }
+  #count .counter .icon {
+    margin-left: 55px;
+  }
+  #blog-details .comments .image {
+    width: 45% !important;
+  }
+  #blog-details .comments .image img{
+    width: 100% !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0%;
+  }
+nav  h5{
+  color: #fff;
+}
+  .links {
+    background-color: #1818199f; /* Set a background color for the toggler button */
+  }
+  .links li a {
+    color: #fff !important;
+  }
+  nav .dropdown-menu ,
+  nav .dropdown-menu .dropdown-submenu {
+    background-color: #1818199f !important; /* Set a background color for the toggler button */
+  }
+  nav .links li a:hover {
+    color: #0078ff !important;
+  }
+  nav .links li a:hover::before {
+    width: 0%;
+  }
+  .navbar-nav .nav-link.active.active::after {
+    display: none !important;
+  }
+  .dropdown .dropdown-submenu {
+    position: static !important;
+  }
+  .title-s {
+    font-size: 0.98rem;
+    font-weight: 600;
+    display: flex;
+  }
+  .title-info {
+    font-size: 0.89rem;
+  }
+  #testimonials .owl-carousel .description {
+    margin-block: 10px;
+  }
+  #testimonials .owl-dots {
+    bottom: -70px;
+  }
+  #count .counter .icon {
+    margin-left: 30px;
+  }
+  #blog-details .archives ul li::before,
+#blog-details .recent ul li::before {
+  left: -5%;
+}
+#blog-details .comments .image {
+  width: 35% !important;
+}
+#blog-details .comments .image img{
+  width: 100% !important;
+}
+#blogs .card-footer span a {
+  font-size: 10px;
+}
+#blogs .card-footer .clock i,
+#blogs .card-footer .clock span{
+  font-size: 12px !important;
+}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  #testimonials .owl-carousel .description {
+    margin-block: 10px;
+  }
+  #testimonials .owl-dots {
+    bottom: -50px;
+  }
+  #count .count-num {
+    margin-left: -10px;
+    text-align: center;
+  }
+  #count .count-num .count-name {
+    margin-left: -50px;
+  }
+  #count .counter .icon {
+    margin-left: 180px;
+  }
+  #blog-details .comments .image {
+    width: 80% !important;
+  }
+  #blog-details .comments .image img{
+    width: 100% !important;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  #typed {
+    font-size: 2rem;
+  }
+  .typed-cursor {
+    font-size: 2rem;
+  }
+  .title-s {
+    font-size: 0.98rem;
+    font-weight: 600;
+    display: inline-block;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  #blogs .title-line::before,
+  #work .title-line::before,
+  #services .title-line::before {
+    left: 43%;
+  }
+  .title-info {
+    font-size: 0.89rem;
+  }
+  img {
+    width: 50%;
+  }
+  #testimonials .owl-carousel .item .item-image {
+    top: -5%;
+  }
+  #testimonials .owl-carousel .description {
+    margin-block: 7px;
+  }
+  #testimonials .owl-dots {
+    bottom: -50px;
+  }
+  #count {
+    padding-left: 60px;
+  }
+  #count .count-num {
+    margin-left: 30px;
+    text-align: center;
+  }
+  #count .counter .icon {
+    margin-left: 65px;
+  }
+  #count .num {
+    margin-right: 50px;
+  }
+  #count .count-num {
+    margin-left: -5px;
+    text-align: center;
+  }
+  #count .count-num .count-name {
+    margin-left: -50px;
+  }
+  #contact .btn {
+    margin-inline: 5px;
+    margin-top: 10px;
+  }
+#blog-details .title h1,
+#PortfolioDetails .title h1 {
+  font-size: 2rem;
+}
+#PortfolioDetails h4{
+  margin-block: 3rem !important;
+}
+#blog-details .post-box .post-info h5::after {
+  bottom: 50px;
+}
+#blog-details .comments-body .image-comment h4{
+  font-size: 16px;
+  line-height: 18px;
+}
+#blog-details h4::before {
+  top: -5%;
+  height: 20px;
+}
+#blog-details .comments a,
+#blog-details .comments p,
+#blog-details .comments span {
+font-size: 13px !important;
+padding-left: 10px;
+}
+#blog-details .comments .image {
+  width: 150% !important;
+}
+#blog-details .comments .image img{
+  width: 100% !important;
+}
+#blog-details h4::before {
+  height: 30px;
+  left: 0%;
+  top: 20%;
+}
+}
+
+/* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+@media (max-width: 575.98px) {
+}
+
+/*-------------------------------  End Media-Queries ------------------------------- */
