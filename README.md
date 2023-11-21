@@ -1,5 +1,5 @@
 # DevFolio
-DevFolio is a simple responsive user interface web page that is built using HTML, CSS & Bootstrap.
+DevFolio is a simple responsive user interface web page that is built using HTML, CSS, Bootstrap & JavaScript.
 
 ### Built with
 
